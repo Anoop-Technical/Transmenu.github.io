@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>Design Transparent Menu</title>
+	<style>
+		body{
+			background:url("image/1unsplash.jpg") center no-repeat;
+			height: 100vh;
+			background-size: cover;
+		}
+		.menu{
+			width: 80%;
+			margin: 0px auto;
+			height: 10px;
+		}
+		
+		.menu ul{
+			padding: 0px;
+		}
+		
+		.menu ul li{
+			float: left;
+			background-color: black;
+			color: white;
+			width: 200px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 25px;
+			text-align: center;
+			opacity: 0.6;
+			list-style: none;
+		}
+		
+		.menu ul li ul{
+			display: none;
+		}
+		
+		.menu ul li:hover > ul{
+			display: block;
+		}
+		
+		.menu ul li:hover{
+			background-color: #ff6666;
+			opacity: 0.9;
+		}
+		
+		.menu ul li ul li{
+			position: relative;
+		}
+		.menu ul li ul li ul{
+			position: absolute;
+			left: 200px;
+			top: 0px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class = "Menu">
+		<ul>
+			<li>USA
+				<ul>
+					<li>New York</li>
+				</ul>
+			</li>
+			<li>India
+				<ul>
+					<li>Pune</li>
+					<li>Mumbai</li>
+					<li>Bangalore</li>
+					<li>Dehradun</li>
+					<li>Delhi
+						<ul>
+							<li>Odeon</li>
+							<li>Laksmi Nagar</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>France</li>
+			<li>Australia</li>
+			<li>Brazil</li>
+		</ul>
+	</div>
+</body>
+</html>
